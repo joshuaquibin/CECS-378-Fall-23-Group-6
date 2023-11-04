@@ -11,7 +11,7 @@ COLOR_ADDRESS = "\033[92m"    # Green
 def main():
     interface = "nRF Sniffer for Bluetooth LE COM6"
     
-    # Build the tshark command to capture packets with detailed information
+    # Build the tshark command to capture packets with detailed information command="tshark -i "nRF Sniffer for Bluetooth LE COM6" -T json"
     command = ["tshark", "-i", interface, "-V"]
     
     # Start the tshark process
