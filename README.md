@@ -140,11 +140,13 @@ By including this filter in our Python script, we offer users a streamlined expe
 ## Relevant Sources used:
 
 BLE:
+
 https://www.bluetooth.com/specifications/specs/?keyword=core+specification
 https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gap
 https://novelbits.io/intro-bluetooth-low-energy-version-2/
 https://novelbits.io/
 
 Wireshark:
+
 https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html
 https://ask.wireshark.org/questions/
