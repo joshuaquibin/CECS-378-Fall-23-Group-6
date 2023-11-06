@@ -136,3 +136,15 @@ The constructed filter syntax for tshark is as follows:
 This command, when used with tshark, will display all BLE packets except those with the specified PDU types, essentially omitting the common advertising packets. It enhances efficiency by limiting the volume of traffic to analyze and enabling analysts to focus on potentially vulnerable packets.
 
 By including this filter in our Python script, we offer users a streamlined experience for BLE packet analysis on Windows platforms, leveraging Bettercap's capabilities with the precision of tshark's filtering features. This makes it a valuable contribution to the community, enhancing the effectiveness of security professionals' workflow when working with BLE devices.
+
+## Relevant Sources used:
+
+BLE:
+https://www.bluetooth.com/specifications/specs/?keyword=core+specification
+https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gap
+https://novelbits.io/intro-bluetooth-low-energy-version-2/
+https://novelbits.io/
+
+Wireshark:
+https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html
+https://ask.wireshark.org/questions/
