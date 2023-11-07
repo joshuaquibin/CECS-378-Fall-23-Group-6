@@ -230,11 +230,71 @@ go version
 
 * Now is the time to use this repository in order to Sniff BLE packets using Tshark with the "Bluefruit LE Sniffer - Bluetooth Low Energy (BLE 4.0) - nRF51822" device and compile it and run it using Bettercap's code
 
-First, clone the repository using this command:
+First, Make sure you have Git installed. After that, clone the repository using this command:
 
 ```bash
-
+git clone git@github.com:joshuaquibin/CECS-378-Fall-23-Group-6.git
 ```
+
+Now move to the repository folder using command:
+
+```bash
+cd CECS-378-Fall-23-Group-6
+```
+
+Then use this command to go to the Bettercap forked repository:
+
+```bash
+cd net-sniff-bettercap
+```
+
+Now, use this command to compile all the code of Bettercap:
+
+```bash
+go build .
+```
+
+After that, use this command to start using Betttercap:
+
+```bash
+sudo ./bettercap -caplet http-ui
+```
+
+You will see that you entered intothe Comand Line Interface of bettercap and may see errors or warnings. Use this command to solve those errors and warnings:
+
+```bash
+caplets.update
+```
+
+* Now is the time to set-up the BLE Sniffing! 🦈
+
+On the Command line Interface of Bettercap use this command in order to set the source where you want the Bettercap to get the information from. For this one we just use "" in order to indicate that we are not going to use any Json source path. So, the command is:
+
+```bash
+set ble.sniff.source ""
+```
+
+then, we have to specify the interface we will be using that we set-up before in order for the "Bluefruit LE Sniffer - Bluetooth Low Energy (BLE 4.0) - nRF51822" to work with Wireshark. In our case the interface was "nRF Sniffer for Bluetooth LE COM3", so we will use the command:
+
+```bash
+set ble.sniff.interface "nRF Sniffer for Bluetooth LE COM3"
+```
+
+Now, usually Wireshark when installed its files will be on the path "Program Files/Wireshark". Inside the Wireshark forlder there is a "tshark.exe" that is the actual Tshark program. We will give Bettercap that path in order for it to sniff BLE packets with the Tshark we integrated in the code. Use the command:
+
+```bash
+set ble.sniff.tshark "/mnt/c/Program Files/Wireshark/tshark.exe"
+```
+
+Now finally we can start the Program to sniff BLE packets!!! 👻🐧
+
+Use this command to start the sniffing:
+
+```bash
+ble.sniff on
+```
+
+<h6>This will start sniffing non stop, use Ctrl+C to stop the Sniffing</h6>
 
 ## Relevant Sources used:
 
