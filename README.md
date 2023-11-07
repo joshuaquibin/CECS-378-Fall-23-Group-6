@@ -137,7 +137,104 @@ The constructed filter syntax for tshark is as follows:
 
 This command, when used with tshark, will display all BLE packets except those with the specified PDU types, essentially omitting the common advertising packets. It enhances efficiency by limiting the volume of traffic to analyze and enabling analysts to focus on potentially vulnerable packets.
 
-By including this filter in our Python script, we offer users a streamlined experience for BLE packet analysis on Windows platforms, leveraging Bettercap's capabilities with the precision of tshark's filtering features. This makes it a valuable contribution to the community, enhancing the effectiveness of security professionals' workflow when working with BLE devices.
+By including this filter in our Python script, we offer users a streamlined experience for BLE packet analysis on Windows platforms, leveraging Bettercap's capabilities with the precision of Tshark's filtering features. This makes it a valuable contribution to the community, enhancing the effectiveness of security professionals' workflow when working with BLE devices.
+
+## Set-Up Bettercap(Our Modified code of Bettercap) and Run the code of this Repository
+
+
+<h4>Step 1: Install WSL</h4>
+
+* Open PowerShell as Administrator and run:
+
+```bash
+wsl --install
+```
+
+The command will install WSL with default Ubuntu distribution. Once installed, launch WSL by typing "wsl" in the Windows search menu or with the powershell command:
+
+```bash
+wsl
+```
+
+<h4>Step 2: Update and Upgrade your packages</h4>
+
+* After Launching WSL, move to the right directory with command:
+
+```bash
+cd
+```
+  
+* Now update and upgrade your packages using this command:
+
+```bash
+sudo apt update && sudo apt upgrade
+```
+
+<h4>Step 3: Install Go Environment(This will allow our Go code of Bettercap to be compiled)</h4>
+
+```bash
+sudo apt install golang-go
+```
+
+<h4>Step 4: Install Bettercap required libraries</h4>
+
+* According to Betttercap documentation, this Open Source needs certain dependencies installed in the system in order for the code to compile successfully
+
+This are the required dependencies according to https://www.bettercap.org/installation/:
+
+-libpcap
+-libusb-1.0-0 (required by the HID module)
+-libnetfilter-queue (on Linux only, required by the packet.proxy module
+
+Use this command to install the above dependencies listed:
+
+```bash
+sudo apt install libpcap-dev libusb-1.0-0-dev libnetfilter-queue-dev
+```
+
+<h4>Step 5: Configure Go Environment</h4>
+
+* In order to Set-up your Go environment you will need to add some environment variables to your .bashrc or .profile file:
+
+Open the profile file using the default text editor of Linux called "nano", and use the command:
+
+```bash
+nano ~/.profile
+```
+
+Once you are inside the file go all the bottom of that file and add this to there:
+
+```bash
+export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+```
+
+Save by pressing Ctrl+O and to exit Ctrl+X.
+
+* Then to apply the changes use the command:
+
+```bash
+source ~/.profile
+```
+
+
+<h4>Step 6: Verify Go Installation</h4>
+
+* Check Go is installed by using the command:
+
+```bash
+go version
+```
+
+<h4>Step 7: Download this code and Compile and Sniff BLE packets</h4>
+
+* Now is the time to use this repository in order to Sniff BLE packets using Tshark with the "Bluefruit LE Sniffer - Bluetooth Low Energy (BLE 4.0) - nRF51822" device and compile it and run it using Bettercap's code
+
+First, clone the repository using this command:
+
+```bash
+
+```
 
 ## Relevant Sources used:
 
