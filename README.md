@@ -71,9 +71,11 @@ C:\Users\brill\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Pyth
 <img src="https://i.imgur.com/0KrUaOC.png" alt="MLH-banner" width="50%" height="50%">
 
 8. Go to this link: "https://www.nordicsemi.com/Products/Development-tools/nRF-Sniffer-for-Bluetooth-LE/Download?lang=en#infotabs" and download the "nrf_sniffer_for_bluetooth_le_4.1.1.zip" and go to the folder you download it and extract all the zip.
+
    <img src="https://i.imgur.com/LdSeq8u.png" alt="MLH-banner" width="50%" height="50%">
 
 9. Now open the folder you extracted and go to the folder that is inside that is called "extcap". Inside the "extcap" folder, you will see a "nrf_sniffer_ble" that is a batch script. We will run this in some second in the command prompt.
+    
    <img src="https://i.imgur.com/67cvIcz.png" alt="MLH-banner" width="50%" height="50%">
    <img src="https://i.imgur.com/4r3SIxO.png" alt="MLH-banner" width="50%" height="50%">
 
