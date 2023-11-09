@@ -296,6 +296,83 @@ ble.sniff on
 
 <h6>This will start sniffing non stop, use Ctrl+C to stop the Sniffing</h6>
 
+<h4>Step 8: Start GUI - Bettercap BLE Sniffing</h4>
+
+Use this command in the Windows machine in order to forward you WSL into your host machine:
+
+```bash
+netsh interface portproxy add v4tov4 listenport=80 listenaddress=127.0.0.1 connectport=[PORT] connectaddress=172.22.104.164
+```
+
+Now, in WSL:
+
+```bash
+sudo ./bettercap -caplet http-ui
+```
+Then,
+
+```bash
+caplets.update
+```
+
+Now in order for the GUI to work use:
+
+```bash
+ui.update
+```
+
+Now exit the Bettercap:
+
+```bash
+exit
+```
+
+Finally, now start the program again:
+
+```bash
+sudo ./bettercap -caplet http-ui
+```
+
+In your host's machine web browser enter this website🌐:
+
+```bash
+http://localhost/#/events
+```
+
+And you should be able to see this Website
+
+<img src="https://i.imgur.com/s4vr5hi.png" alt="MLH-banner" width="50%" height="50%">
+
+After that, go to the "Advanced" tab:
+
+<img src="https://i.imgur.com/nqN4IeF.png" alt="MLH-banner" width="50%" height="50%">
+
+On the left side go to "ble.sniff":
+
+<img src="https://i.imgur.com/TzmP2zW.png" alt="MLH-banner" width="50%" height="50%">
+
+* Make sure "extcap nRF Sniffer interface" matches you interface. In this case mine is "nRF Sniffer for Bluetooth LE COM3"
+* Also, make sure "location of tshark command" matches to the location of the .exe of your Tshark. In my case it is "/mnt/c/Program Files/Wireshark/tshark.exe"
+
+MAKE SURE TO SAVE THOSE CHANGES( SAVE IT BY CLICKING IN THE BUTTON THAT THE RIGHT ARROW IS POINTING)
+
+So it would look like this:
+
+<img src="https://i.imgur.com/etphTor.png" alt="MLH-banner" width="50%" height="50%">
+
+Now start sniffing by clicking the "ble.sniff on" button:
+
+<img src="https://i.imgur.com/NQkx8Wh.png" alt="MLH-banner" width="50%" height="50%">
+
+Now, wait a few seconds until the device starts blinking rapidly in yellow.
+
+Go to the "Events" Tab on the top left corner, and you will notice that the packets will start appearing in the GUI 👻🍹:
+
+<img src="https://i.imgur.com/Hjrly5X.png" alt="MLH-banner" width="50%" height="50%">
+
+If you want to stop the sniffing you just go to where you did the sniff on, you will find the "ble.sniff off" button.
+
+
 ## Relevant Sources used:
 
 BLE:
