@@ -6,6 +6,8 @@
 
 ---
 
+## Buy the "Bluefruit LE Sniffer - Bluetooth Low Energy (BLE 4.0) - nRF51822" device in: https://www.adafruit.com/product/2269
+
 ## Set Up "Bluefruit LE Sniffer - Bluetooth Low Energy (BLE 4.0) - nRF51822" to computer
 
 First, make sure you have Wireshark installed on your Windows machine(This setup doesn't work on Windows VM's)
@@ -386,3 +388,12 @@ Wireshark:
 
 https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html
 https://ask.wireshark.org/questions/
+
+Install-WSL:
+
+https://learn.microsoft.com/en-us/windows/wsl/install
+
+Learn-Go:
+
+https://go.dev/tour/welcome/1
+https://go.dev/doc/tutorial/getting-started
