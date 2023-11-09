@@ -23,6 +23,7 @@
 
 # To do this, we extend the filter with additional PDU types using logical OR ||. The filter "!(btle.advertising_header.pdu_type == 0x00 || btle.advertising_header.pdu_type == 0x02 || btle.advertising_header.pdu_type == 0x04 || btle.advertising_header.pdu_type == 0x06)" now excludes all the common advertising PDU types.
 
+#   THIS CODE IS HOW OUR IDEA CAME 👻🐧🌐🍹
 
 import subprocess
 
