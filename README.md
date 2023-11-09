@@ -1,6 +1,6 @@
 ## Bluetooth-Low-Energy-Attack_PythonScript
 
-<img src="https://i.imgur.com/qAb668m.jpeg" alt="MLH-banner" width="100%" height="600px">
+<img src="https://i.imgur.com/qAb668m.jpeg" alt="MLH-banner" width="100%" height="550px">
 
 💻Bluetooth low energy sniffer automation Python script💻 Analysing data packets from BLE devices using "Bluefruit LE Sniffer - Bluetooth Low Energy (BLE 4.0) - nRF51822"
 
