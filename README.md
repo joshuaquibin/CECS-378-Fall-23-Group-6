@@ -1,4 +1,4 @@
-## Bluetooth-Low-Energy-Attack_PythonScript
+## Bluetooth-Low-Energy-Attack: BLE Sniffing with Windows - Bettercap Contribution 
 
 <img src="https://i.imgur.com/qAb668m.jpeg" alt="MLH-banner" width="100%" height="500px">
 
