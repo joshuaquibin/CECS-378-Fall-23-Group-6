@@ -358,7 +358,7 @@ MAKE SURE TO SAVE THOSE CHANGES( SAVE IT BY CLICKING IN THE BUTTON THAT THE RIGH
 
 So it would look like this:
 
-<img src="https://i.imgur.com/etphTor.png" alt="MLH-banner" width="50%" height="50%">
+<img src="https://i.imgur.com/etphTor.png" alt="MLH-banner" width="70%" height="50%">
 
 Now start sniffing by clicking the "ble.sniff on" button:
 
